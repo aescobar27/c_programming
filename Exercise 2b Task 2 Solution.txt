@@ -1,0 +1,23 @@
+/* Exercise 2b Task 2 Solution
+   calculates the force between two point charges, 
+   using the well-known formula
+   F = 1/(4*pi*epsilon-zero) * q1*q2/r*r. */
+
+#include <stdio.h>
+#define PI 3.141593
+#define E0 8.85E-12
+
+int main (void) {
+
+  double q1, q2, r, force;
+  printf("Enter q1: ");
+  scanf("%lf", &q1);
+  printf("Enter q2: ");
+  scanf("%lf", &q2);
+  printf("Enter r: ");
+  scanf("%lf", &r);
+  force = 1/(4*PI*E0)*q1*q2/(r*r);
+  printf("Force = %.2f\n", force);
+
+  return 0;
+}

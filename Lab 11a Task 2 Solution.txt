@@ -1,0 +1,10 @@
+/* Lab 11a Task 2 Solution.
+
+   To toggle a bit in a variable i, apply the exclusive-or operator (^) to i and a
+   mask with a 1 bit in the desired position, then store the result back into i.
+   
+   To toggle bit 4, for example, use the statement
+                   i = i ^ 0x0010;
+   or, more concisely,
+                   i ^= 0x0010;  
+*/

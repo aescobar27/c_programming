@@ -1,0 +1,26 @@
+/* Lab 1b Additional Exercises Task 3 */
+
+/* A ball is released from a height of 20 metres above the ground with an 
+   initial velocity of 0 m/s. Using the following formulae:
+           s = ut + at*t/2
+           v = u + at
+   where s is distance (m), t is time (s), u is initial velocity (m/s) and v is final velocity (m/s),
+   write a program that calculates
+   (i)  The time it takes the ball to hit the ground from the moment it is released.
+   (ii) The speed at which the ball collides with the ground.
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+   double s=20, u=0, t, v, a=10;
+
+   /* (i) use u=0 and re-arrange equation */
+   t = sqrt(2*s/a);
+   printf("Time taken to hit the ground = %.2f s\n", t);
+
+   /* (ii) use u=0 */
+   v = u + a*t;
+   printf("The speed of the ball when it hits the ground = %.2f m/s\n", v);
+}

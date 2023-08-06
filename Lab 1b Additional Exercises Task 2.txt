@@ -1,0 +1,10 @@
+/* Lab 1b Additional Exercises Task 2 */
+
+#include <stdio.h>
+
+int main(void){
+   double Vin = 10;
+   double R1 = 10e3, R2 = 20e3;
+   
+   printf("Vout = %.2f\n", Vin*R1/(R1+R2));
+}

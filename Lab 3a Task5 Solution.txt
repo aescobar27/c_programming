@@ -1,0 +1,37 @@
+/* Lab 3a Task5 Solution
+      Write a simple program that tests whether a given integer is between the limits 0 and 100, as follows:
+      a) Prompts the user to enter any number, positive or negative. Save the number entered.
+      b) Tests whether the number entered is between the limits, or not, using a single if statement using
+         the logical and operator.
+      c) Print out whether the number entered is less than, or greater than 0 and 100, or is between them.
+      d) Tests whether the number entered is between the limits using a SINGLE if statement using
+         the logical OR operator.
+   */
+
+#include <stdio.h>
+
+int main (void) {
+
+
+   int number;      /* this will store the number entered */
+   /* a) Prompts the user to enter any number, positive or negative. Save the number entered */
+   printf("Enter an integer: ");
+   scanf("%d",&number);
+   /* b) Tests whether the number entered is between the limits using a single if statement using
+         the logical and operator.
+      c) Print out whether the number entered is less than, or greater than 0 and 100, or is between them.
+   */
+   if (0 < number && number < 100)
+      printf("%d IS between 0 and 100\n",number);
+   else
+      printf("%d IS NOT between 0 and 100\n",number);
+
+   /* d) Tests whether the number entered is between the limits using a SINGLE if statement using
+         the logical OR operator: */
+   if (number < 0 || number > 100)
+      printf("\nUsing a logical OR operator:\n%d IS NOT between 0 and 100\n",number);
+   else
+      printf("\nUsing a logical OR operator:\n%d IS between 0 and 100\n",number);
+
+  return 0;
+}

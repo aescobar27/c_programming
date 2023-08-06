@@ -1,0 +1,22 @@
+/* Exercise 2a Task 5 Solution
+   -uses a macro to define a constant for
+   potential energy (PE), and uses it with kinetic energy
+   to calculate total energy.
+*/
+
+#include <stdio.h>
+#define PE 10;
+
+int main(void)
+{
+	/* define variables */
+	double mass = 19.2;
+	double velocity = 72.5;
+	/* perform calculation */
+	double ke = 0.5 * mass * velocity * velocity;
+	double total_energy = ke + PE;
+	/* display result */
+	printf("total energy = %.2f\n", total_energy);
+
+        return 0;
+}

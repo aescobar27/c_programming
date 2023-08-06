@@ -1,0 +1,15 @@
+/* Lab 1a Task 4 Solution.
+   -prints out distance, time and speed using floats.
+*/
+
+#include <stdio.h>
+
+int main (void) {
+
+  float distance = 22.0f, time = 5.0f;
+  float speed = distance/time;
+  printf("distance = %f, time = %f\n", distance, time);
+  printf("speed = %f\n", speed);
+
+  return 0;
+}

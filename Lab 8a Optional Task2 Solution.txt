@@ -1,0 +1,47 @@
+/* Lab 8a Optional Task2 Solution */
+
+/* Modify the read_line function shown on slide 33 of Lecture 14 so that it
+(a)	skips white space before the beginning to store input characters
+(b)	stops reading at the first white-space character (Hint: to check whether 
+        or not a character is white space call the isspace() function -you will have 
+        to also #include <ctype.h>).
+(c)	Prints out the number of characters returned by read_line.
+*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+#define N 10
+
+/* function prototype */
+int read_line(char str[], int n);
+
+int main(void)  {
+
+    char str[N];
+
+    printf("\nEnter a line of text:\n");
+    int chars_read = read_line(str, N);
+
+    printf("You entered %d characters:\n", chars_read);
+    for (int i=0; str[i]!='\0'; i++) {
+      printf("%c", str[i]);
+    }
+    printf ("\n");
+
+    return 0;
+}
+
+/* Contributed by Mantas Navickas */
+int read_line(char str[], int n)
+{
+  int ch, i = 0;
+  while ((ch = getchar()) != '\n')
+  {
+    if(i==0 && isspace(ch));
+    else if (isspace(ch)) break;
+    else if (i<n) str[i++] = ch;            //Added condition to terminate adding of characters
+  }
+  str[i] = '\0'; /* terminates string */
+  return i; /* number of characters stored */
+}

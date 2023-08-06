@@ -1,0 +1,31 @@
+/* Lab 5a Task 6 Solution */
+
+/* A program that stores the following ten data items in an integer array
+   and stores the squares of the items in a new array:
+		415  243  755  452  676  -210  -45  6  82  -73
+  Print out the data in both arrays to check they have been saved correctly. */
+
+#include <stdio.h>
+
+int main (void) {
+
+        int data [10] = {415, 243, 755, 452, 676, -210, -45, 6, 82, -73};
+        int squares [10];     /* declare an array called 'squares' to store the squared values */
+
+        /* You could use while loops, for loops, or do while loops to do this
+           -this solution uses for loops */
+        /* This first for loop prints out each element of data
+           then stores its square value in the corresponding position in 'squares': */
+        for (int i=0; i<10; i++) {
+           printf("%d ", data[i]);
+           squares[i] = data[i]*data[i];
+        }
+        printf("\n"); /* print a newline to separate the data */
+        /* This second for loop prints out each element of 'squares': */
+        for (int i=0; i<10; i++) {
+           printf("%d ", squares[i]);
+        }
+        printf("\n");
+
+  return 0;
+}

@@ -1,0 +1,27 @@
+/* Lab 8a Task1 */
+
+/* In each the following steps you are asked to identify 
+   which of the following calls don't work and explain why.
+   
+   (a) printf("%c", '\n');
+   (b) printf("%c", "\n");
+   (c) printf("%s", '\n');
+   (d) printf("%s", "\n");
+   (e) printf('\n');
+   (f) printf("\n");
+   (g) putchar('\n');
+   (h) putchar("\n");
+   (i) puts('\n');
+   (j) puts("\n");
+   (k) puts("");
+
+*/
+
+#include <stdio.h>
+
+int main(void)  {
+
+    /* write the code below and test */
+
+    return 0;
+}

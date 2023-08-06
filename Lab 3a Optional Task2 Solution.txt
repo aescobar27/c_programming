@@ -1,0 +1,23 @@
+/* Lab 3a Optional Task2 Solution */
+
+   /* Note: in C99, if negative operands are used,
+      the value of i % j has the same sign as i. */
+
+#include <stdio.h>
+
+int main (void) {
+
+   /* Test of 9%6: */
+   printf("9%%6 = %d\n",(9%6));
+
+   /* Test of -9%6: */
+   printf("\n-9%%6 = %d\n",(-9%6));
+
+   /* Test of 9%-6: */
+   printf("\n9%%-6 = %d\n",(9%-6));
+
+   /* Test of -9%-6: */
+   printf("\n-9%%-6 = %d\n",(-9%-6));
+
+  return 0;
+}

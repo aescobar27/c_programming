@@ -1,0 +1,25 @@
+/* Lab 4a Task3 Solution */
+
+/* A program that uses a for loop to calculate the factorial 
+   of an integer number entered by the user. */
+
+#include <stdio.h>
+int main(void)
+{
+ int x;
+ double factorial = 1;
+ printf("Enter an integer number: ");
+ scanf("%d", &x);
+ for(int i=2; i<=x; i++) {
+	factorial *= i;
+ }
+ printf("\n"); /* blank line */
+ printf("Factorial of %d = %.0lf\n", x, factorial);
+
+ return 0;
+}
+
+
+
+  return 0;
+}

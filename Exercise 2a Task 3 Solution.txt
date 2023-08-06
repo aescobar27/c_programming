@@ -1,0 +1,19 @@
+/* Exercise 2a Task 3 Solution
+   A program that prompts the user to enter a value for x and 
+   then displays the value of the following polynomial:
+   y = 3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6   
+   The output is printed out to an accuracy of two decimal places 
+*/
+
+#include <stdio.h>
+
+int main (void) {
+
+  float x, y;
+  printf("Enter a value for x: ");
+  scanf("%f", &x);
+  y = 3*x*x*x*x*x + 2*x*x*x*x -5*x*x*x -x*x + 7*x -6;
+  printf("\ny = %.2f\n", y);
+
+  return 0;
+}

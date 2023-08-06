@@ -1,0 +1,23 @@
+/* Exercise 2a Task 1 Solution
+   -computes resistance printing the output 
+   in a minimum width of five characters and
+   to an accuracy of three decimal places.
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+	/* define variables */
+	double resistivity = 0.036;
+	double length = 5.55;
+	double area = 0.0022;
+	double resistance;
+	/* perform calculation */
+	resistance = (resistivity * length)/area;
+	/* display result */
+	printf("Resistance = %5.3f\n", resistance);
+	/* printf("Resistance = %f\n",
+                                  (resistivity * length)/area); */
+        return 0;
+}

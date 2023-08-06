@@ -1,0 +1,24 @@
+/* Lab 4a Optional Task 1 Solution  */
+
+/* A program that prompts the user to enter an integer n,
+   then prints out the squared values of all even numbers between 1 and n.   */
+
+#include <stdio.h>
+int main(void)
+{
+ int i, n, square;
+ printf("Enter an integer number: ");
+ scanf("%d", &n);
+ square = 1;
+ for (i = 1; square <= n; i++) {
+     if (i % 2 == 0) {
+        square = i*i;
+        if (square >= n)
+           break;
+        else
+            printf("%d\n", square);
+     }
+ } /* end for loop */
+
+ return 0;
+}

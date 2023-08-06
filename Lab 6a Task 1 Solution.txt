@@ -1,0 +1,30 @@
+/* Lab 6a Task 1 Solution */
+
+/*  A program that that computes the area of a triangle,
+    given its height and length. The prototype of the function is shown below:
+	
+	    double area (double height, double base);
+
+    The program asks the user to enter values for height and base, and calls the 
+    function to compute the area, and prints out the value returned by the function.
+
+*/
+
+#include <stdio.h>
+
+double area (double height, double base);
+
+int main(void)      {
+    double h, b;
+    printf("Enter a value for the height: ");
+    scanf("%lf", &h);
+    printf("Enter a value for the base: ");
+    scanf("%lf", &b);
+    printf("The area of the triangle is %g\n", area(h,b));
+
+    return 0;
+} /* end main */
+
+double area (double height, double base)   {
+    return 0.5 * height * base;
+} /* end area *//

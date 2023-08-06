@@ -1,0 +1,19 @@
+/* Lab 1b Task 2 Solution
+   -computes kinetic energy using variables
+   of type double.
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+	/* define variables */
+	double mass = 19.2;
+	double velocity = 72.5;
+	/* perform calculation */
+	double ke = 0.5 * mass * velocity * velocity;
+	/* display result */
+	printf("kinetic energy = %f\n", ke);
+
+        return 0;
+}

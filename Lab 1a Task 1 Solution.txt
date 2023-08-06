@@ -1,0 +1,15 @@
+/* Lab 1a Task 1 Solution.
+   -prints out a table of student data.
+*/
+
+#include <stdio.h>
+
+int main (void) {
+  printf("Name\tAge\tCourse\n");
+  printf("----------------------\n");
+  printf("J.Smith\t19\t\"EEE\"\n");
+  printf("P.Jones\t20\t\"EEE\"\n");
+  printf("S.Carey\t18\t\"EEE\"\n");
+  printf("F.Hogg\t19\t\"EEE\"\n");
+  return 0;
+}

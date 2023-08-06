@@ -1,0 +1,17 @@
+/* Exercise 2a Task 6 Solution
+   Computes the volume of a sphere after prompting the 
+   user for the radius and using the value entered. */
+
+#include <stdio.h>
+#define PI 3.141593
+
+int main (void) {
+
+  double volume, r;
+  printf("Enter a value for the radius of the sphere: ");
+  scanf("%lf", &r);
+  volume = (4.0f/3.0f)*PI*r*r*r;
+  printf("\nvolume = %.2f\n", volume);
+
+  return 0;
+}

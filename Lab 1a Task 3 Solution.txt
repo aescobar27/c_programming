@@ -1,0 +1,13 @@
+/* Lab 1a Task 3 Solution.
+   -prints out distance, time and speed using integers.
+*/
+
+#include <stdio.h>
+
+int main (void) {
+  int distance = 22, time = 5;
+  int speed = distance/time;
+  printf("distance = %d, time = %d\n", distance, time);
+  printf("speed = %d\n", speed);
+  return 0;
+}

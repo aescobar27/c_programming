@@ -1,0 +1,29 @@
+/* Lab 3a Optional Task1 Solution */
+
+#include <stdio.h>
+
+int main (void) {
+
+   int i = 6, j = 3;
+   /* Test of (-i)/j: */
+   printf("(-%d)/%d = %d\n",i,j, (-i)/j);
+
+   /* Test of -(i/j): */
+   printf("-(%d/%d) = %d\n",i,j, (-i)/j);
+   
+   i = 6, j = -3;
+   /* Test of (-i)/j: */
+   printf("\n(-%d)/%d = %d\n",i,j, (-i)/j);
+
+   /* Test of -(i/j): */
+   printf("-(%d/%d) = %d\n",i,j, (-i)/j);
+   
+   i = -6, j = 3;
+   /* Test of (-i)/j: */
+   printf("\n(-(%d))/%d = %d\n",i,j, (-i)/j);
+
+   /* Test of -(i/j): */
+   printf("-(%d/%d) = %d\n",i,j, (-i)/j);
+
+  return 0;
+}

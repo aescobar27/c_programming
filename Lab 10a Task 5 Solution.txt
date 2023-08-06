@@ -1,0 +1,36 @@
+/* Lab 10a Task 5 Solution */
+
+/* Checks whether a file called output.txt 
+   can be opened for reading, and if so prints
+   out its contents in reverse order. */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)  {
+  FILE *fp;
+
+  /* try to open the file output.txt for reading.
+     If it can print "output.txt can be opened" followed
+     by its contents. If it can't be opened then output
+     "output.txt can't be opened". */
+  if ((fp = fopen("output.txt", "r")) == NULL) {
+    printf("output.txt can't be opened\n");
+    exit(EXIT_FAILURE);
+  }
+  else {
+       printf("\n  output.txt can be opened\n");
+       char ch, a[100];
+       int i = 0;
+       printf("  ");
+       while ((ch = getc(fp)) != EOF) {
+          a[i++]=ch;
+       }
+       while (i>0) {
+          printf("%c", a[--i]);
+       }
+       printf("\n");
+  }
+  fclose(fp);
+  return 0;
+}

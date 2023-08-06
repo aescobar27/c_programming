@@ -1,0 +1,25 @@
+/* Lab 4a Task 4 Solution */
+
+/* A program that finds the largest in a series of numbers entered by the user.
+   The program prompts the user to enter numbers one by one, until 0 or a
+   negative number is entered, whereupon it prints out the largest number entered.  */
+   
+   /* This solution uses a while loop */
+
+#include <stdio.h>
+int main(void)
+{
+ double x, max = 0.0f;
+ while (1) {
+     printf("Enter a number: ");
+     scanf("%lf", &x);
+     if (x <= 0.0)
+        break;
+     if (x > max)
+        max = x;
+     }
+ printf("\n"); /* blank line */
+ printf("The largest number entered was %g\n", max);
+
+ return 0;
+}

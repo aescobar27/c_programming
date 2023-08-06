@@ -1,0 +1,12 @@
+/* Lab 3b Additional Task 1 Solution */
+
+#include <stdio.h>
+
+int main(void) {
+    int p;
+    printf("Enter a number with two digits: ");
+    scanf("%d", &p);
+    printf("The reversal is: %d%d\n", p % 10, p / 10);
+
+    return 0;
+}

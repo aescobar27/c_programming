@@ -1,0 +1,17 @@
+/* Lab 11a Task 2 Problem
+
+*/
+
+#include <stdio.h>
+
+int main (void) {
+
+      /* Declare an int variable i, and write a statement 
+         that "toggles" bit 4 
+         -i.e. change the bit from a 0 to a 1, or from a 1 to a 0. */
+      /* <write the code below>    */
+
+
+
+  return 0;
+}

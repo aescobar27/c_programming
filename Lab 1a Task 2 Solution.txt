@@ -1,0 +1,11 @@
+/* Lab 1a Task 2 Solution.
+   -prints out a path.
+*/
+
+#include <stdio.h>
+
+int main (void) {
+  printf("The path to my C folder is:\n");
+  printf("\"C:\\users\\fred\\C programs\"\n");
+  return 0;
+}

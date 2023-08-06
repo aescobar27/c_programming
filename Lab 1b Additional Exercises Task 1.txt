@@ -1,0 +1,10 @@
+/* Lab 1b Additional Exercises Task 1 */
+
+#include <stdio.h>
+
+int main(void){
+   double R1=10e3, R2=20e3, R3=30e3, R4=40e3, R5=50e3;
+   double Requiv = 1/(1/R1 + 1/R2 + 1/R3 + 1/R4 + 1/R5);
+
+   printf("Requiv = %.2g\n", Requiv);
+}

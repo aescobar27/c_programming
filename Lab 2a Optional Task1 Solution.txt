@@ -1,0 +1,20 @@
+/* Lab 2a Optional Task1 Solution */
+
+#include <stdio.h>
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+int main(void) {
+   /* define variable */
+   double value;
+   /* prompt user and get angle */
+   printf("Enter a value: ");
+   scanf("%lf", &value);
+   double angle = value * M_PI;
+   /* call sin, cos and tan and display the results */
+   printf("sin(%f) = %10.3f\n", angle, sin(angle));
+   printf("cos(%f) = %10.3f\n", angle, cos(angle));
+   printf("tan(%f) = %10.3f\n", angle, tan(angle));
+
+   return 0;
+}

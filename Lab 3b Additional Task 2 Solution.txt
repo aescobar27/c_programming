@@ -1,0 +1,19 @@
+/* Lab 3b Additional Task 2 Solution */
+
+#include <stdio.h>
+
+int main(void) {
+    int x;
+    printf("Enter a number between 0 and 10000: ");
+    scanf("%d", &x);
+    if (x < 10)
+       printf("The number %d has 1 digit\n", x);
+    else if (x < 100)
+       printf("The number %d has 2 digits\n", x);
+    else if (x < 1000)
+       printf("The number %d has 3 digits\n", x);
+    else
+       printf("The number %d has 4 digits\n", x);
+
+    return 0;
+}

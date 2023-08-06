@@ -1,0 +1,23 @@
+/* Lab 10a Task 2 */
+
+/* Checks whether a file called output.txt 
+   can be opened for reading */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)  {
+  FILE *fp;
+
+  /* Try to open the file output.txt for reading.
+     If it can be opened, print "output.txt can be opened",
+     or if not, print "output.txt can't be opened". */
+  /* <write the code below> */
+
+
+ 
+
+  /* Make sure the file is closed: */
+  /* <write the code below> */
+  return 0;
+}

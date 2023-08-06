@@ -1,0 +1,20 @@
+/* Exercise 2a Task 4 Solution
+   A program that tests which identifiers are legal
+   to use, or not.
+*/
+
+#include <stdio.h>
+
+int main(void) {
+
+        int times10;
+	/* INVALID: int 10times; */
+	int _done;
+	int _10times;
+	/* INVALID: int user name; 	(<-- this name has a space between "user" and "name") */
+	/* INVALID: int user.name;	(<-- this name has a "." between "user" and "name") */
+	int user_name;
+	int userName;
+
+  	return 0;
+}

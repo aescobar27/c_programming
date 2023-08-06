@@ -1,0 +1,24 @@
+/* Lab 11a Task 4 Solution.  */
+
+#include <stdio.h>
+
+int count_ones (unsigned int i);
+
+int main(void) {
+    unsigned int num;
+    printf("\n  Enter an non-negative number: ");
+    scanf("%d", &num);
+    printf("  Number of ones in the number = %d\n", count_ones(num));
+    
+    return 0;
+}
+
+int count_ones (unsigned int i) {
+    int ones = 0;
+    while (i != 0) {
+      if (i & 1)
+        ones++;
+        i >>= 1;
+    }
+    return ones;
+}

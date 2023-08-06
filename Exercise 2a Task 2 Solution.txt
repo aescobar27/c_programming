@@ -1,0 +1,22 @@
+/* Exercise 2a Task 2 Solution
+  -computes resistance interactively using scanf
+  prompting for area and length.
+*/
+
+#include <stdio.h>
+
+int main(void) {
+   /* define variables */
+   double resistivity = 0.036;
+   double length, area, resistance;
+   /* get values */
+   printf("Enter length: ");
+   scanf("%lf", &length);
+   printf("Enter area: ");
+   scanf("%lf", &area);
+   resistance = (resistivity * length)/area;
+   /* perform calculation and display result */
+   printf("Resistance = %5.3f\n", resistance );
+
+   return 0;
+}

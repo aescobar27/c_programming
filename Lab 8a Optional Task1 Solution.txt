@@ -1,0 +1,51 @@
+/* Lab 8a Optional Task1 Solution */
+
+/* Write a function called capitalize that capitalizes all the letters 
+   in a string passed to it as an argument. The function prototype is shown below:
+	void capitalize(char s [ ]);
+
+   Write a program to test your function by asking the user to enter some text.
+*/
+
+#include <stdio.h>
+#include <ctype.h>
+#define N 20      /* max size of user-entered string */
+
+void capitalize(char s[]);    /* function capitalize prototype */
+
+int main(void)  {
+    char str [N];
+    char ch;
+    int i = 0;
+    printf("Enter some text: "); /* blank line */
+    while ((ch = getchar()) != '\n')	{
+        if (i<N-1)
+          str[i++] = ch;
+    }
+    str[i] = '\0'; 	/* terminates string */
+
+    /* Uncomment if you want to check that the string was entered correctly 
+       (will also need to change line 38 to: p = str;
+       printf("You entered: \n");
+       char *p = str;
+       while (*p)
+          printf("%c", *p++);
+    */
+
+    /* call capitalize: */
+    capitalize(str);
+
+    char *p = str;    /* initialise p */
+    while (*p)
+        printf("%c", *p++);
+
+    printf("\n\n");
+    return 0;
+}
+
+/* function capitalize (using array subscripting): */
+void capitalize(char s[]) {
+  int i;
+  for (i = 0; s[i] != '\0'; i++)
+      s[i] = toupper(s[i]);
+}

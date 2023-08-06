@@ -1,0 +1,88 @@
+/* Lab 3a Task 2
+   In each step a-h you are asked to write some
+   statements to test your predictions.
+*/
+
+#include <stdio.h>
+
+int main (void) {
+
+   /* Step a):
+      Declare and assign two int variables i=7 and j=8 and
+      try to predict the result of: i *= j + 1;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+      /* Note: a *= b + c is equivalent to
+               a = a * (b + c)
+               and not
+               a = a * b + c
+      */
+
+   /* Step b):
+      Declare a third int variable k; assign 1 to i, j and k.
+      try to predict the result of: i += j += k;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+
+   /* Step c):
+      Next assign i=1, j=2 and k=3.
+      Try to predict the result of: i -= j -= k;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+      
+   /* Step d):
+      Next assign i=2 and j=1 and k=0.
+      Try to predict the result of: i *= j *= k;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+      
+   /* Step e):
+      Next assign i=6 and try to predict the result of:
+      j = i += i;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+      
+   /* Step f):
+      Next assign i=5 and try to predict the result of:
+      j = (i -= 2) + 1;
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+
+   /* Step g):
+      Next assign i=7 and try to predict the result of:
+      j = 6 + (i = 2.5);
+      Test your prediction with a suitable printf statement. */
+      /* <write the code below>    */
+
+
+
+      
+   /* Step h):
+      Finally assign i=2 and j=8, and try to predict the result of:
+      j = (i = 6) + (j = 3);
+      Test your prediction with a suitable printf statement. */
+      /*<write the code below>    */
+
+
+
+
+
+  return 0;
+}

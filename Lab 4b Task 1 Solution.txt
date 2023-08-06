@@ -1,0 +1,52 @@
+/* Lab 4b Task 1 Solution */
+
+/* This program prints out a table of squares between 1 and n, where n is an integer
+   entered by the user. 
+   
+   a) Run the program and try to determine the smallest value of n that causes failure.
+   b) Change the type of the number entered to short and repeat.
+   c) Change the type of the number entered to long and repeat.
+   d) Repeat a) to c) for unsigned short, unsigned int and unsigned long.
+
+   You will find the following helpful:
+   type          printf formatting code
+   ------------------------------
+   signed short       %hd
+   signed int         %d
+   signed long        %ld
+   unsigned short     %hu
+   unsigned int       %u
+   unsigned long      %lu
+*/
+
+   /* On my machine these are the maximum values I got for n
+   when using SIGNED integers:
+   ---------------------------
+   short:   181
+   int:   46340
+   long:  46340
+   -suggesting that the maximum values of SIGNED int and SIGNED long are the same on my machine.
+   
+   These are the maximum values I got when using UNSIGNED integers:
+   ---------------------------
+   unsigned short:  255
+   unsigned int:  65535
+   unsigned long: 65535
+   -suggesting that the maximum values of UNSIGNED int and SIGNED long are the same on my machine.
+   */
+
+
+#include <stdio.h>
+int main(void)
+{
+ unsigned long squared;
+ int i, n;
+ printf("Enter a number: ");
+ scanf("%d", &n);
+ for (i = 1; i <= n; i++) {
+   squared = i * i;
+     printf("%d squared = %lu\n",i, squared);
+ } /* end for loop */
+
+ return 0;
+}

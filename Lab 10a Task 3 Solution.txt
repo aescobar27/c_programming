@@ -1,0 +1,30 @@
+/* Lab 10a Task 3 Solution */
+
+/* Checks whether a file called output.txt 
+   can be opened for reading, and if so prints
+   out its contents. */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)  {
+  FILE *fp;
+
+  /* try to open the file output.txt for reading.
+     If it can print "output.txt can be opened" followed
+     by its contents. If it can't be opened then output
+     "output.txt can't be opened". */
+  if ((fp = fopen("output.txt", "r")) == NULL) {
+    printf("output.txt can't be opened\n");
+    exit(EXIT_FAILURE);
+  }
+  else {
+       printf("output.txt can be opened\n");
+       char ch;
+       while ((ch = getc(fp)) != EOF) {
+          printf("%c", ch);
+       }
+  }
+  fclose(fp);
+  return 0;
+}

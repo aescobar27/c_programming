@@ -1,0 +1,21 @@
+/* Lab 1b Task 1 Solution
+   -computes resistance using variables
+   of type double.
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+	/* define variables */
+	double resistivity = 0.036;
+	double length = 5.55;
+	double area = 0.0022;
+	double resistance;
+	/* perform calculation */
+	resistance = (resistivity * length)/area;
+	/* display result */
+	printf("Resistance = %f\n", resistance);
+
+        return 0;
+}
